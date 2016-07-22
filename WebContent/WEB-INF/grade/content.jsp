@@ -1,26 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
-
-<link rel="stylesheet" href="../css/global.css" />
-    <jsp:include page="${context}/global/top.jsp"/>
-    <jsp:include page="${context}/global/header.jsp"/>
-   <body>
-  <div id="box" class="memberClass box">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<style>
+	div.memberClass{font-size: 20px}
+</style>
+<div id="" class="memberClass box">
   <h1>성적관리</h1><br/>
             <div style="width:300px;margin:0 auto;text-align: left;">
 			<ol>
-				<li><a href="service/regist.jsp">등록</a></li>
-				<li><a href="service/update.jsp">수정</a></li>
-				<li><a href="service/delete.jsp">삭제</a></li>
-				<li><a href="result/list.jsp">목록</a></li>
-				<li><a href="service/count.jsp">카운트</a></li>
-				<li><a href="service/search.jsp">검색</a></li>
+				<li><a href="${context}/grade.do?regist">등록</a></li>
+				<li><a href="${context}/grade.do?update">수정</a></li>
+				<li><a href="${context}/grade.do?delete">삭제</a></li>
+				<li><a href="${context}/grade.do?list">목록</a></li>
+				<li><a href="${context}/grade.do?count">카운트</a></li>
+				<li><a href="${context}/grade.do?search">검색</a></li>
 			
 			
 			</ol>	
 			</div>	
-    <a href="${context}/index.jsp">
-    <img alt="home" src="${img}/home.png"style="width:10%">
-    </a>
+<a href="${context}/home.do">
+		<img src="${img}/home.png" alt="home" style="width: 30px"/>
+	</a>
 </div>
-</body>
-</html>
+

@@ -26,7 +26,6 @@ public class MemberServiceImpl implements MemberService{
 	@Override
 	public String regist(MemberBean mem) {
 		String msg = "";
-		
 		int result = dao.insert(mem);
 		if (result==1) {
 			msg = "회원가입 축하합니다";

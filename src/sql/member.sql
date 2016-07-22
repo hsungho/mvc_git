@@ -28,7 +28,7 @@ update member  set    email = id||'@test.com';where id = 'you';
 update member  set    email = 'jun@test.com'where id = 'jun';
 update member  set    PROFILE_IMG = id||'.jpg';
 update member  set    PROFILE_IMG = 'kang.jpg'where id = 'jun';
-update member set REG_DATE = '2016-10-14'where id ='zzu';
+update member set REG_DATE = '2016-10-14'where id ='han';
 
 alter table member add  email varchar2(30);
 alter table member add  profile_img varchar2(100);
